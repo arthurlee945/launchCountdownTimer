@@ -154,9 +154,9 @@ class App extends React.Component {
             </div>
           </div>
           <div className = "socialBox">
-            <a href="#" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/arthurlee945" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://github.com/arthurlee945" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://github.com/arthurlee945" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
