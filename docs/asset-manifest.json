@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/launchCountdownTimer/static/css/main.9ea1171d.css",
+    "main.js": "/launchCountdownTimer/static/js/main.46d77930.js",
+    "static/media/bg-stars.svg": "/launchCountdownTimer/static/media/bg-stars.166881a1c03d6b1239f5dc4250bf85ad.svg",
+    "static/media/pattern-hills.svg": "/launchCountdownTimer/static/media/pattern-hills.815d688fd937623063b5c111be9fc999.svg",
+    "index.html": "/launchCountdownTimer/index.html",
+    "main.9ea1171d.css.map": "/launchCountdownTimer/static/css/main.9ea1171d.css.map",
+    "main.46d77930.js.map": "/launchCountdownTimer/static/js/main.46d77930.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ea1171d.css",
+    "static/js/main.46d77930.js"
+  ]
+}

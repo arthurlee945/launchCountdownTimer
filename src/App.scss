@@ -1,0 +1,292 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;700&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+}
+Body{
+  background: linear-gradient(0deg,#1c0320 ,#080808, #080808);
+  color:#f7f7f7;
+  height: 100vh;
+  width:100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Red Hat Text', sans-serif;
+  user-select: none;
+  .bg{
+    z-index:-1;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+  }
+  .deco{
+    z-index:-1;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+  }
+}
+
+.countDownBox{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  .headertxt{
+    position:absolute;
+    top:10vh;
+    text-transform: uppercase;
+    letter-spacing:0.5rem;
+    font-weight: 500;
+  }
+  .socialBox{
+    position:absolute;
+    bottom: 8vh;
+    >a{
+      text-decoration:none;
+      color:#aca0ac;
+      >i{
+        font-size:2rem;
+        margin-left:1rem;
+        margin-right:1rem;
+      }
+    }
+  }
+  .countDown{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    >div{
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      margin-left:1.2rem;
+      margin-right:1.2rem;
+      .numBox{
+        position:relative;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction:column;
+        width:7.5rem;
+        height:calc(7.5rem + 2px);
+        font-size:2rem;
+        .topBox{
+          position:absolute;
+          top:0;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          width:7.5rem;
+          height:3.75rem;
+          background-color:#0a0a22;
+          overflow:hidden;
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+          &::before{
+            content:"";
+            position:absolute;
+            background:#080808;
+            width:0.5rem;
+            height:0.5rem;
+            bottom:-0.25rem;
+            left:-0.25rem;
+            border-radius: 50%;
+          }
+          &::after{
+            content:"";
+            position:absolute;
+            background:#080808;
+            width:0.5rem;
+            height:0.5rem;
+            bottom:-0.25rem;
+            right:-0.25rem;
+            border-radius: 50%;
+          }
+          .top{
+            position:relative;
+            top:calc(50% + 1px);
+            font-weight:500;
+            color:#df236b;
+          }
+        }
+        .bottomBox{
+          position:absolute;
+          bottom:calc(3.75rem + 2px);
+          transform: scaleY(0);
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          width:7.5rem;
+          height:3.75rem;
+          background-color:#0a0a22;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+          overflow:hidden;
+          
+          &::before{
+            content:"";
+            position:absolute;
+            background:#080808;
+            width:0.5rem;
+            height:0.5rem;
+            top:-0.25rem;
+            left:-0.25rem;
+            border-radius: 50%;
+          }
+          &::after{
+            content:"";
+            position:absolute;
+            background:#080808;
+            width:0.5rem;
+            height:0.5rem;
+            top:-0.25rem;
+            right:-0.25rem;
+            border-radius: 50%;
+          }
+          .bottom{
+            position:relative;
+            bottom:calc(50% + 1px);
+            font-weight:500;
+            color:#ff2679;
+          }
+        }
+        .flipAni{
+          animation: flip 0.2s linear;
+          animation-fill-mode: forwards;
+          @keyframes flip {
+            from{
+              bottom:calc(3.75rem + 2px);
+              box-shadow:0 -5px 8px #080808;
+            }
+            10%{
+              bottom: calc(1.875rem + 1px);
+            }
+            to{
+              transform:scaleY(1);
+              bottom:0;
+              background-color:#0c0c27;
+              box-shadow:0 5px 8px #080808;
+            }
+          }
+        }
+        .flipAni2{
+          animation: flip2 0.2s linear;
+          animation-fill-mode: forwards;
+          box-shadow:0 5px 8px #080808;
+          @keyframes flip2 {
+            from{
+              bottom:calc(3.75rem + 2px);
+            }
+            10%{
+              bottom: calc(1.875rem + 1px);
+            }
+            to{
+              transform:scaleY(1);
+              bottom:0;
+              background-color:#0c0c27;
+            }
+          }
+        }
+        .flipPH{
+          z-index:-1;
+          position:absolute;
+          bottom:0;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          width:7.5rem;
+          height:3.75rem;
+          background-color:#0c0c27;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+          overflow:hidden;
+          box-shadow:0 5px 8px #080808;
+          &::before{
+            content:"";
+            position:absolute;
+            background:#080808;
+            width:0.5rem;
+            height:0.5rem;
+            top:-0.25rem;
+            left:-0.25rem;
+            border-radius: 50%;
+          }
+          &::after{
+            content:"";
+            position:absolute;
+            background:#080808;
+            width:0.5rem;
+            height:0.5rem;
+            top:-0.25rem;
+            right:-0.25rem;
+            border-radius: 50%;
+          }
+          .bottom{
+            position:relative;
+            bottom:calc(50% + 1px);
+            font-weight:500;
+            color:#ff2679;
+          }
+        }
+      }
+      >p{
+        margin-top:1.8rem;
+        font-size:0.8rem;
+        letter-spacing:0.4rem;
+        text-transform: uppercase;
+        color:#aca0ac;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  Body{
+    overflow: hidden;
+  }
+  
+  .countDownBox{
+    width:100vw;
+    .headertxt{
+      text-align:center;
+      top:20vh;
+      font-size:1rem;
+    }
+    .socialBox{
+      position:absolute;
+      bottom: 20vh;
+    }
+    .countDown{
+      transform:scale(0.8);
+    }
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 3){
+  Body{
+    overflow: hidden;
+  }
+  
+  .countDownBox{
+    width:100vw;
+    .headertxt{
+      text-align:center;
+      top:20vh;
+      font-size:1rem;
+    }
+    .socialBox{
+      position:absolute;
+      bottom: 20vh;
+    }
+    .countDown{
+      transform:scale(0.6);
+    }
+  }
+}
